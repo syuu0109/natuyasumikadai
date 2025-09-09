@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>西農パパイヤ | 青パパイヤの魅力</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="西条農業高校（西農）の青パパイヤ。鯛カマパパイヤ、パパイヤキムチ、青パパイヤカレー（レトルト）を紹介。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <span class="logo">🥭</span>
+        <span class="brand-text">西農パパイヤ</span>
+      </div>
+      <nav class="menu">
+        <a href="#about">特徴</a>
+        <a href="#products">加工品</a>
+        <a href="#contact">問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <!-- animated decorative papayas -->
+      <div class="floaters">
+        <div class="papaya p1"></div>
+        <div class="papaya p2"></div>
+        <div class="papaya p3"></div>
+        <div class="papaya p4"></div>
+      </div>
+      <div class="container hero-inner">
+        <h1>
+          愛媛 × 沖縄品種<br />
+          <span class="highlight">青パパイヤ</span>で、地域を元気に。
+        </h1>
+        <p class="subtitle">
+          西条農業高校の生徒が育てる、ソーラーシェアリング栽培の青パパイヤ。
+          健康・おいしさ・サステナブルを一皿に。
+        </p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#products">商品を見る</a>
+          <a class="btn ghost" href="#about">特徴を知る</a>
+        </div>
+      </div>
+      <!-- subtle scroll cue -->
+      <a href="#about" class="scroll-cue" aria-label="スクロール">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>西農パパイヤの特徴</h2>
+          <ul class="feature-list">
+            <li><strong>品種：</strong>沖縄由来の青パパイヤ品種を栽培</li>
+            <li><strong>栽培：</strong>ソーラーシェアリングで持続可能な農業を実践</li>
+            <li><strong>活用：</strong>未熟果（青パパイヤ）として食用。パパイン酵素が豊富</li>
+            <li><strong>料理：</strong>サラダ、炒め物、漬物、スープなど幅広く活用</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <h3>こんな方におすすめ</h3>
+          <p>健康志向・時短ニーズ・ギフトにも。</p>
+          <div class="badges">
+            <span class="badge">低脂質</span>
+            <span class="badge">食物繊維</span>
+            <span class="badge">酵素</span>
+            <span class="badge">サステナブル</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section alt">
+      <div class="container">
+        <h2>加工品</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-image papaya-pattern"></div>
+            <div class="card-body">
+              <h3>鯛カマパパイヤ</h3>
+              <p>愛媛の鯛の<span class="em">かま</span>と青パパイヤの惣菜。旨味 × 食感 × 酵素の新提案。</p>
+              <a class="btn small" href="#contact">問い合わせ</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-image kimchi-pattern"></div>
+            <div class="card-body">
+              <h3>パパイヤキムチ</h3>
+              <p>青パパイヤを使った発酵食品。乳酸菌と酵素の相乗効果で毎日の食卓に。</p>
+              <a class="btn small" href="#contact">問い合わせ</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-image curry-pattern"></div>
+            <div class="card-body">
+              <h3>青パパイヤカレー（レトルト）</h3>
+              <p>手軽で本格。パパイヤの食感を活かし、保存性と利便性を両立。</p>
+              <a class="btn small" href="#contact">問い合わせ</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>お問い合わせ</h2>
+          <p>学校・地域・企業コラボ、販売先、メディア取材などお気軽にご連絡ください。</p>
+          <ul class="contact-list">
+            <li>メール：<a href="mailto:info@example.jp">info@example.jp</a></li>
+            <li>電話：<a href="tel:000-0000-0000">000-0000-0000</a></li>
+          </ul>
+        </div>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('送信ありがとうございました！');">
+          <label>お名前<input type="text" required></label>
+          <label>メール<input type="email" required></label>
+          <label>内容<textarea rows="4" required></textarea></label>
+          <button class="btn primary" type="submit">送信</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 西農パパイヤ</p>
+    </div>
+  </footer>
+
+</body>
+</html>
